@@ -25,10 +25,10 @@ function animate(elem,attr,callback) {
             }else{
                 elem.style[prop] = current + speed + "px";
             }
-            if(bFlag){
-                clearInterval(elem.timer);
-                callback && callback();
-            }
+        }
+        if(bFlag){
+            clearInterval(elem.timer);
+            callback && callback();
         }
     },30)
 }
